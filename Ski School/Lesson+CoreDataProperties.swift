@@ -2,13 +2,12 @@
 //  Lesson+CoreDataProperties.swift
 //  Ski School
 //
-//  Created by Sunny on 2016/11/3.
-//  Copyright © 2016年 devhubs. All rights reserved.
+//  Created by Andi Setiyadi on 9/19/16.
+//  Copyright © 2016 devhubs. All rights reserved.
 //
 
 import Foundation
 import CoreData
- 
 
 extension Lesson {
 

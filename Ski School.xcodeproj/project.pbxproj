@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B85215A1DAD9C8700694968 /* icon-email.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B8521591DAD9C8700694968 /* icon-email.png */; };
+		7BBACA3C1D90C96700DD73A3 /* SkiSchool_v2->v3.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = 7BBACA3B1D90C96700DD73A3 /* SkiSchool_v2->v3.xcmappingmodel */; };
+		7BBACA511D90FC1600DD73A3 /* Lesson+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBACA4B1D90FC1600DD73A3 /* Lesson+CoreDataClass.swift */; };
+		7BBACA521D90FC1600DD73A3 /* Lesson+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBACA4C1D90FC1600DD73A3 /* Lesson+CoreDataProperties.swift */; };
+		7BBACA531D90FC1600DD73A3 /* Student+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBACA4D1D90FC1600DD73A3 /* Student+CoreDataClass.swift */; };
+		7BBACA541D90FC1600DD73A3 /* Student+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBACA4E1D90FC1600DD73A3 /* Student+CoreDataProperties.swift */; };
+		7BBACA551D90FC1600DD73A3 /* Instructor+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBACA4F1D90FC1600DD73A3 /* Instructor+CoreDataClass.swift */; };
+		7BBACA561D90FC1600DD73A3 /* Instructor+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBACA501D90FC1600DD73A3 /* Instructor+CoreDataProperties.swift */; };
 		7BC999721D7BDFFF005CE3C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC999711D7BDFFF005CE3C2 /* AppDelegate.swift */; };
 		7BC999741D7BDFFF005CE3C2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC999731D7BDFFF005CE3C2 /* ViewController.swift */; };
 		7BC999771D7BDFFF005CE3C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BC999751D7BDFFF005CE3C2 /* Main.storyboard */; };
@@ -29,16 +37,19 @@
 		7BC999A21D7BE1E0005CE3C2 /* StudentInfoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC999A11D7BE1E0005CE3C2 /* StudentInfoTableViewController.swift */; };
 		7BC999A41D7BE1F1005CE3C2 /* StudentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC999A31D7BE1F1005CE3C2 /* StudentTableViewCell.swift */; };
 		7BC999A71D7BE6FD005CE3C2 /* StudentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC999A61D7BE6FD005CE3C2 /* StudentService.swift */; };
-		9B152C4A1DCB396B001220F7 /* SkiSchool_v2->v3.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = 9B152C491DCB396B001220F7 /* SkiSchool_v2->v3.xcmappingmodel */; };
-		9B152C521DCB3BF5001220F7 /* Instructor+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B152C4C1DCB3BF5001220F7 /* Instructor+CoreDataClass.swift */; };
-		9B152C531DCB3BF5001220F7 /* Instructor+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B152C4D1DCB3BF5001220F7 /* Instructor+CoreDataProperties.swift */; };
-		9B152C541DCB3BF5001220F7 /* Lesson+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B152C4E1DCB3BF5001220F7 /* Lesson+CoreDataClass.swift */; };
-		9B152C551DCB3BF5001220F7 /* Lesson+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B152C4F1DCB3BF5001220F7 /* Lesson+CoreDataProperties.swift */; };
-		9B152C561DCB3BF5001220F7 /* Student+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B152C501DCB3BF5001220F7 /* Student+CoreDataClass.swift */; };
-		9B152C571DCB3BF5001220F7 /* Student+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B152C511DCB3BF5001220F7 /* Student+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7B175B481D7CCBA50043B8CE /* Ski_School v2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Ski_School v2.xcdatamodel"; sourceTree = "<group>"; };
+		7B8521591DAD9C8700694968 /* icon-email.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-email.png"; sourceTree = "<group>"; };
+		7BBACA3A1D90C7C200DD73A3 /* Ski_School v3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Ski_School v3.xcdatamodel"; sourceTree = "<group>"; };
+		7BBACA3B1D90C96700DD73A3 /* SkiSchool_v2->v3.xcmappingmodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcmappingmodel; path = "SkiSchool_v2->v3.xcmappingmodel"; sourceTree = "<group>"; };
+		7BBACA4B1D90FC1600DD73A3 /* Lesson+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Lesson+CoreDataClass.swift"; sourceTree = "<group>"; };
+		7BBACA4C1D90FC1600DD73A3 /* Lesson+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Lesson+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		7BBACA4D1D90FC1600DD73A3 /* Student+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Student+CoreDataClass.swift"; sourceTree = "<group>"; };
+		7BBACA4E1D90FC1600DD73A3 /* Student+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Student+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		7BBACA4F1D90FC1600DD73A3 /* Instructor+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Instructor+CoreDataClass.swift"; sourceTree = "<group>"; };
+		7BBACA501D90FC1600DD73A3 /* Instructor+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Instructor+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		7BC9996E1D7BDFFF005CE3C2 /* Ski School.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ski School.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BC999711D7BDFFF005CE3C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7BC999731D7BDFFF005CE3C2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,15 +74,6 @@
 		7BC999A11D7BE1E0005CE3C2 /* StudentInfoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentInfoTableViewController.swift; sourceTree = "<group>"; };
 		7BC999A31D7BE1F1005CE3C2 /* StudentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentTableViewCell.swift; sourceTree = "<group>"; };
 		7BC999A61D7BE6FD005CE3C2 /* StudentService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentService.swift; sourceTree = "<group>"; };
-		9B152C431DCAEF9E001220F7 /* Ski_School v2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Ski_School v2.xcdatamodel"; sourceTree = "<group>"; };
-		9B152C481DCB3786001220F7 /* Ski_School v3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Ski_School v3.xcdatamodel"; sourceTree = "<group>"; };
-		9B152C491DCB396B001220F7 /* SkiSchool_v2->v3.xcmappingmodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcmappingmodel; path = "SkiSchool_v2->v3.xcmappingmodel"; sourceTree = "<group>"; };
-		9B152C4C1DCB3BF5001220F7 /* Instructor+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Instructor+CoreDataClass.swift"; sourceTree = "<group>"; };
-		9B152C4D1DCB3BF5001220F7 /* Instructor+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Instructor+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		9B152C4E1DCB3BF5001220F7 /* Lesson+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Lesson+CoreDataClass.swift"; sourceTree = "<group>"; };
-		9B152C4F1DCB3BF5001220F7 /* Lesson+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Lesson+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		9B152C501DCB3BF5001220F7 /* Student+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Student+CoreDataClass.swift"; sourceTree = "<group>"; };
-		9B152C511DCB3BF5001220F7 /* Student+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Student+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7BBACA4A1D90FBEA00DD73A3 /* entity */ = {
+			isa = PBXGroup;
+			children = (
+				7BBACA4B1D90FC1600DD73A3 /* Lesson+CoreDataClass.swift */,
+				7BBACA4C1D90FC1600DD73A3 /* Lesson+CoreDataProperties.swift */,
+				7BBACA4D1D90FC1600DD73A3 /* Student+CoreDataClass.swift */,
+				7BBACA4E1D90FC1600DD73A3 /* Student+CoreDataProperties.swift */,
+				7BBACA4F1D90FC1600DD73A3 /* Instructor+CoreDataClass.swift */,
+				7BBACA501D90FC1600DD73A3 /* Instructor+CoreDataProperties.swift */,
+			);
+			name = entity;
+			sourceTree = "<group>";
+		};
 		7BC999651D7BDFFF005CE3C2 = {
 			isa = PBXGroup;
 			children = (
@@ -104,7 +119,7 @@
 		7BC999701D7BDFFF005CE3C2 /* Ski School */ = {
 			isa = PBXGroup;
 			children = (
-				9B152C4B1DCB3BC7001220F7 /* entity */,
+				7BBACA4A1D90FBEA00DD73A3 /* entity */,
 				7BC999A51D7BE6ED005CE3C2 /* service */,
 				7BC9999D1D7BE181005CE3C2 /* CoreDataStack.swift */,
 				7BC9999B1D7BE0FA005CE3C2 /* sample.json */,
@@ -119,7 +134,7 @@
 				7BC9999F1D7BE1C9005CE3C2 /* StudentViewController.swift */,
 				7BC999A11D7BE1E0005CE3C2 /* StudentInfoTableViewController.swift */,
 				7BC999A31D7BE1F1005CE3C2 /* StudentTableViewCell.swift */,
-				9B152C491DCB396B001220F7 /* SkiSchool_v2->v3.xcmappingmodel */,
+				7BBACA3B1D90C96700DD73A3 /* SkiSchool_v2->v3.xcmappingmodel */,
 			);
 			path = "Ski School";
 			sourceTree = "<group>";
@@ -127,6 +142,7 @@
 		7BC999861D7BE0C6005CE3C2 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				7B8521591DAD9C8700694968 /* icon-email.png */,
 				7BC999871D7BE0C6005CE3C2 /* boy1.png */,
 				7BC999881D7BE0C6005CE3C2 /* boy2.png */,
 				7BC999891D7BE0C6005CE3C2 /* circle-beginner.png */,
@@ -147,19 +163,6 @@
 				7BC999A61D7BE6FD005CE3C2 /* StudentService.swift */,
 			);
 			name = service;
-			sourceTree = "<group>";
-		};
-		9B152C4B1DCB3BC7001220F7 /* entity */ = {
-			isa = PBXGroup;
-			children = (
-				9B152C4C1DCB3BF5001220F7 /* Instructor+CoreDataClass.swift */,
-				9B152C4D1DCB3BF5001220F7 /* Instructor+CoreDataProperties.swift */,
-				9B152C4E1DCB3BF5001220F7 /* Lesson+CoreDataClass.swift */,
-				9B152C4F1DCB3BF5001220F7 /* Lesson+CoreDataProperties.swift */,
-				9B152C501DCB3BF5001220F7 /* Student+CoreDataClass.swift */,
-				9B152C511DCB3BF5001220F7 /* Student+CoreDataProperties.swift */,
-			);
-			name = entity;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,7 +197,7 @@
 				TargetAttributes = {
 					7BC9996D1D7BDFFF005CE3C2 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = VJGEDW5SA9;
+						DevelopmentTeam = MW4DYSHR2N;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -222,6 +225,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B85215A1DAD9C8700694968 /* icon-email.png in Resources */,
 				7BC9997F1D7BDFFF005CE3C2 /* LaunchScreen.storyboard in Resources */,
 				7BC999951D7BE0C6005CE3C2 /* circle-blue.png in Resources */,
 				7BC999991D7BE0C6005CE3C2 /* phone.png in Resources */,
@@ -247,20 +251,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				7BC999A01D7BE1C9005CE3C2 /* StudentViewController.swift in Sources */,
+				7BBACA531D90FC1600DD73A3 /* Student+CoreDataClass.swift in Sources */,
 				7BC999741D7BDFFF005CE3C2 /* ViewController.swift in Sources */,
 				7BC9997A1D7BDFFF005CE3C2 /* Ski_School.xcdatamodeld in Sources */,
-				9B152C561DCB3BF5001220F7 /* Student+CoreDataClass.swift in Sources */,
-				9B152C551DCB3BF5001220F7 /* Lesson+CoreDataProperties.swift in Sources */,
+				7BBACA561D90FC1600DD73A3 /* Instructor+CoreDataProperties.swift in Sources */,
+				7BBACA551D90FC1600DD73A3 /* Instructor+CoreDataClass.swift in Sources */,
+				7BBACA521D90FC1600DD73A3 /* Lesson+CoreDataProperties.swift in Sources */,
 				7BC999721D7BDFFF005CE3C2 /* AppDelegate.swift in Sources */,
-				9B152C4A1DCB396B001220F7 /* SkiSchool_v2->v3.xcmappingmodel in Sources */,
-				9B152C541DCB3BF5001220F7 /* Lesson+CoreDataClass.swift in Sources */,
-				9B152C531DCB3BF5001220F7 /* Instructor+CoreDataProperties.swift in Sources */,
-				9B152C571DCB3BF5001220F7 /* Student+CoreDataProperties.swift in Sources */,
+				7BBACA3C1D90C96700DD73A3 /* SkiSchool_v2->v3.xcmappingmodel in Sources */,
+				7BBACA511D90FC1600DD73A3 /* Lesson+CoreDataClass.swift in Sources */,
 				7BC999A41D7BE1F1005CE3C2 /* StudentTableViewCell.swift in Sources */,
-				9B152C521DCB3BF5001220F7 /* Instructor+CoreDataClass.swift in Sources */,
 				7BC9999E1D7BE181005CE3C2 /* CoreDataStack.swift in Sources */,
 				7BC999A21D7BE1E0005CE3C2 /* StudentInfoTableViewController.swift in Sources */,
 				7BC999A71D7BE6FD005CE3C2 /* StudentService.swift in Sources */,
+				7BBACA541D90FC1600DD73A3 /* Student+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,10 +385,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = VJGEDW5SA9;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = MW4DYSHR2N;
 				INFOPLIST_FILE = "Ski School/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.sunnyleeyun;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.devhubs.Ski-School";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -394,10 +399,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = VJGEDW5SA9;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = MW4DYSHR2N;
 				INFOPLIST_FILE = "Ski School/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.sunnyleeyun;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.devhubs.Ski-School";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -430,11 +436,11 @@
 		7BC999781D7BDFFF005CE3C2 /* Ski_School.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				9B152C481DCB3786001220F7 /* Ski_School v3.xcdatamodel */,
-				9B152C431DCAEF9E001220F7 /* Ski_School v2.xcdatamodel */,
+				7BBACA3A1D90C7C200DD73A3 /* Ski_School v3.xcdatamodel */,
+				7B175B481D7CCBA50043B8CE /* Ski_School v2.xcdatamodel */,
 				7BC999791D7BDFFF005CE3C2 /* Ski_School.xcdatamodel */,
 			);
-			currentVersion = 9B152C431DCAEF9E001220F7 /* Ski_School v2.xcdatamodel */;
+			currentVersion = 7BBACA3A1D90C7C200DD73A3 /* Ski_School v3.xcdatamodel */;
 			path = Ski_School.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

@@ -9,7 +9,7 @@
 import UIKit
 import MessageUI
 
-class StudentInfoTableViewController: UITableViewController, MFMessageComposeViewControllerDelegate {
+class StudentInfoTableViewController: UITableViewController, MFMessageComposeViewControllerDelegate, MFMailComposeViewControllerDelegate {
 
     @IBOutlet weak var studentNameTextField: UITextField!
     @IBOutlet weak var studentAgeTextField: UITextField!
@@ -17,7 +17,7 @@ class StudentInfoTableViewController: UITableViewController, MFMessageComposeVie
     @IBOutlet weak var parentNameTextField: UITextField!
     @IBOutlet weak var parentContactTextField: UITextField!
     @IBOutlet weak var imageView: UIImageView!
-    @IBOutlet weak var instructorTextField: UITextField!
+    @IBOutlet weak var instructorNameField: UITextField!
     
     @IBOutlet weak var deleteButton: UIButton!
     @IBOutlet var levelButtonCollection: [UIButton]!
@@ -28,13 +28,14 @@ class StudentInfoTableViewController: UITableViewController, MFMessageComposeVie
     var selectedLevel = ""
     var isNewStudent = false
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         studentNameTextField.text = student.name
         studentAgeTextField.text = String(student.age)
         
-        if let level = student.level {
+        /*if let level = student.level {
             let studentLevel = level
             selectedLevel = studentLevel
         }
@@ -42,7 +43,24 @@ class StudentInfoTableViewController: UITableViewController, MFMessageComposeVie
         if let sport = student.sport {
             let studentSport = sport
             sportControl.selectedSegmentIndex = studentSport == "ski" ? 0 : 1
+        }*/
+        
+        
+        if let lesson = student.lesson {
+            if let level = lesson.level {
+                selectedLevel = level
+            }
+            
+            if let sport = lesson.sport {
+                sportControl.selectedSegmentIndex = sport == "ski" ? 0 : 1
+            }
+            
+            if let instructor = lesson.instructor {
+                instructorNameField.text = instructor.name
+            }
         }
+        
+        
         
         if let parentName = student.parentName {
             let studentParentName = parentName
@@ -54,10 +72,10 @@ class StudentInfoTableViewController: UITableViewController, MFMessageComposeVie
             parentContactTextField.text = studentParentContact
         }
         
-        if let instructor = student.instructor {
-         let studentInstructor = instructor
-         instructorTextField.text = studentInstructor
-         }
+        /*if let instructor = student.instructor {
+            let studentInstructor = instructor
+            instructorNameField.text = studentInstructor
+        }*/
         
         imageView.layer.cornerRadius = 35
         imageView.layer.borderWidth = 1
@@ -111,8 +129,9 @@ class StudentInfoTableViewController: UITableViewController, MFMessageComposeVie
         
         UIApplication.shared.open(phoneURL!, options: Dictionary(), completionHandler: nil)
     }
+
     
-    @IBAction func smsAction(sender: UIButton) {
+    @IBAction func smsAction(_ sender: UIButton) {
         let phoneNumber = student.parentContact!
         
         if MFMessageComposeViewController.canSendText() {
@@ -124,7 +143,24 @@ class StudentInfoTableViewController: UITableViewController, MFMessageComposeVie
         }
     }
     
+    @IBAction func emailAction(_ sender: UIButton) {
+        if MFMailComposeViewController.canSendMail() {
+            let messageController = MFMailComposeViewController()
+            messageController.mailComposeDelegate = self
+            messageController.setToRecipients(["instructor@skischoolapp.com"])
+            messageController.setSubject("Request for Info")
+            
+            self.present(messageController, animated: true, completion: nil)
+        }
+    }
+    
+    
     func messageComposeViewController(_ controller: MFMessageComposeViewController, didFinishWith result: MessageComposeResult) {
+        controller.dismiss(animated: true, completion: nil)
+    }
+    
+    
+    func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
         controller.dismiss(animated: true, completion: nil)
     }
     
@@ -147,11 +183,24 @@ class StudentInfoTableViewController: UITableViewController, MFMessageComposeVie
             student.age = number
         }
         
-        student.sport = sportControl.titleForSegment(at: sportControl.selectedSegmentIndex)
-        student.level = selectedLevel
+        //student.sport = sportControl.titleForSegment(at: sportControl.selectedSegmentIndex)
+        //student.level = selectedLevel
+        
+        if let lesson = student.lesson {
+            lesson.sport = sportControl.titleForSegment(at: sportControl.selectedSegmentIndex)
+            lesson.level = selectedLevel
+            
+            if lesson.instructor == nil {
+                let instructor = Instructor(context: coreData.persistentContainer.viewContext)
+                lesson.instructor = instructor
+            }
+            
+            lesson.instructor?.name = instructorNameField.text
+        }
+        
         student.parentName = parentNameTextField.text
         student.parentContact = parentContactTextField.text
-        student.instructor = instructorTextField.text
+        //student.instructor = instructorNameField.text
         
         coreData.saveContext()
         

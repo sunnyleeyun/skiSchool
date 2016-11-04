@@ -27,7 +27,7 @@ class StudentViewController: UIViewController, UITableViewDataSource, UITableVie
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         request = Student.fetchRequest()
         selectedSport = "ski"
     }
@@ -70,9 +70,16 @@ class StudentViewController: UIViewController, UITableViewDataSource, UITableVie
         let cell = tableView.dequeueReusableCell(withIdentifier: "studentCell") as! StudentTableViewCell
         
         let student = students[indexPath.row]
+        
         cell.studentNameLabel.text = student.name
         cell.studentAgeLabel.text = String(student.age)
-        cell.levelImageView.image = UIImage(named: "circle-\(student.level!).png")
+        
+        if let lesson = student.lesson {
+            if let level = lesson.level {
+                cell.levelImageView.image = UIImage(named: "circle-\(level).png")
+            }
+        }
+        
         
         return cell
     }
@@ -96,7 +103,7 @@ class StudentViewController: UIViewController, UITableViewDataSource, UITableVie
             student = students[(selectedIndexPath?.row)!]
         }
         else if segue.identifier == "addStudentSegue" {
-            student = Student(context: coreData.persistentContainer.viewContext)
+            student = StudentService.new(managedObjectContext: managedObjectContext)
             studentInfoController.isNewStudent = true
         }
         

@@ -86,8 +86,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 student.age = ((json["age"])?.int16Value)!
                 student.parentName = json["parentName"] as? String
                 student.parentContact = json["parentContact"] as? String
-                student.sport = json["sport"] as? String
-                student.level = json["level"] as? String
+                
+                let lesson = Lesson(context: managedObjectContext)
+                lesson.sport = json["sport"] as? String
+                lesson.level = json["level"] as? String
+                
+                student.lesson = lesson
             }
             
             coreData.saveContext()

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11232" systemVersion="16A323" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11232" systemVersion="15G31" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="Instructor" representedClassName=".Instructor" syncable="YES">
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="phone" optional="YES" attributeType="String" syncable="YES"/>
@@ -19,8 +19,8 @@
         <relationship name="lesson" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Lesson" inverseName="student" inverseEntity="Lesson" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Student" positionX="223" positionY="6" width="128" height="120"/>
-        <element name="Instructor" positionX="-234" positionY="27" width="128" height="88"/>
-        <element name="Lesson" positionX="-2" positionY="-159" width="128" height="103"/>
+        <element name="Student" positionX="160" positionY="18" width="128" height="120"/>
+        <element name="Instructor" positionX="-198" positionY="27" width="128" height="88"/>
+        <element name="Lesson" positionX="-18" positionY="-135" width="128" height="103"/>
     </elements>
 </model>
